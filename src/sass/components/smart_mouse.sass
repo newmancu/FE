@@ -1,0 +1,33 @@
+@use 'sass:color'
+.smart-mouse
+  position: fixed
+  top: 50px
+  left: 50px
+  z-index: 9999
+
+#inner-circle
+  position: fixed
+  top: 50%
+  left: 50%
+  width: 15px
+  height: 15px
+  border-radius: 50%
+  background-color: #26f8b2
+  transform: translate(-50%, -50%)
+  user-select: none
+  pointer-events: none
+
+  // transition: linear all 200ms
+
+#outer-circle
+  position:  fixed
+  top: 50%
+  left: 50%
+  width: 45px
+  height: 45px
+  border-radius: 50%
+  border: 3px solid darken(#26f8b2, 20%)
+  transform: translate(-50%, -50%)
+  transition: ease-out all .2s
+  user-select: none
+  pointer-events: none
