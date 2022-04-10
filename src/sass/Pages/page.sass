@@ -1,0 +1,146 @@
+@import './navigation'
+
+.page__container
+  display: flex
+  justify-content: stretch
+  flex-direction: row-reverse
+  flex-wrap: nowrap
+  background-color: $whiteColor
+  padding-left: 50px
+
+  @media (max-width: $breakpoint992) 
+    flex-direction: column-reverse
+
+  @media (max-width: $breakpoint480) 
+    padding-left: 20px
+    padding-right: 20px
+
+.sections
+  flex-grow: 2
+  width: 1rem
+  // flex-basis: auto
+  padding-right: 70px
+
+  @media (max-width: $breakpoint992) 
+    width: 100%
+    padding-right: 50px
+  
+  @media (max-width: $breakpoint480) 
+    padding-right: 0
+
+.page__section
+  margin-bottom: 60px
+  margin-left: auto
+  margin-right: auto
+  
+  &:last-child
+    margin-bottom: 105px
+    @media (max-width: $breakpoint480) 
+      margin-bottom: 30px
+
+  @media (max-width: $breakpoint480) 
+    margin-bottom: 18px
+
+
+h3.section__title
+  color: $purpleColor
+  margin-bottom: 20px
+  font-weight: 500
+  font-size: 40px
+  line-height: 47px
+
+p.section__content
+  font-weight: 400
+  font-size: 24px
+  line-height: 28px
+
+.hr
+  display: block
+  height: 1px
+  width: 90%
+  background-color: $aquaColor
+  margin-left: auto
+  margin-right: auto
+  margin-top: 72px
+  margin-bottom: 32px
+
+  @media (max-width: $breakpoint480) 
+    margin-top: 32px
+    margin-bottom: 18px
+
+.section__image
+  margin: 34px auto 42px auto
+  max-width: 800px
+  text-align: center
+
+  & img
+    margin-left: auto
+    margin-right: auto
+
+    @media (max-width: $breakpoint1400) 
+      width: 450px
+
+    @media (max-width: $breakpoint768) 
+      width: 300px
+    
+    @media (max-width: $breakpoint480) 
+      width: 100%
+
+  & p.image__name
+    margin-top: 24px
+    font-style: italic
+    font-weight: 400
+    font-size: 24px
+    line-height: 28px
+    text-align: center
+
+.section__info
+  position: relative
+  width: 100%
+  background-color: $infoColor
+  border-radius: 6px
+  margin-top: 34px
+  margin-bottom: 42px
+
+i.info__icon
+  display: inline-block
+  position: absolute
+  top: 32px
+  left: 32px
+  width: 45px 
+  height: 45px
+  line-height: 45px
+  font-size: 45px
+  color: $whiteColor
+
+.info__wrapper
+  padding: 32px 50px 50px 110px
+
+  @media (max-width: $breakpoint480) 
+    padding: 32px 20px 50px 20px    
+
+h3.info__title
+  margin: 0
+  height: 45px
+  color: $whiteColor
+  line-height: 45px
+  font-weight: 500
+  font-size: 40px
+  margin-bottom: 30px
+
+  @media (max-width: $breakpoint480) 
+    text-align: center
+    margin-left: auto
+    margin-right: auto 
+
+.info__content
+  font-style: normal
+  font-weight: 400
+
+  font-size: 24px
+  line-height: 28px
+  color: $dark-blueColor
+
+  // @media (max-width: $breakpoint480) 
+  //   padding: 32px 20px 50px 20px    
+  

@@ -1,0 +1,45 @@
+.page__navigation
+  flex-basis: 300px
+  border-left: 1px solid $aquaColor
+
+  @media (max-width: $breakpoint992) 
+    border-left: none
+    border-top: 1px solid $aquaColor
+    flex-basis: 100%
+  
+
+.navigaiton__title
+  text-align: center
+  display: block
+  font-weight: 500
+  letter-spacing: 0.15em
+  align-self: center
+  margin-top: 52px
+  margin-bottom: 62px
+
+  @media (max-width: $breakpoint480) 
+    margin-bottom: 30px
+    margin-top: 10px
+    
+
+.navigation__links
+  list-style: circle
+  margin-left: 45px
+
+  &:not(.browser-defalut) > li
+    list-style-type: disc
+    color: $blueColor
+
+.navigation__link
+  margin-bottom: 40px
+  font-weight: 400
+  font-size: 24px
+  line-height: 28px
+
+  @media (max-width: $breakpoint480) 
+    margin-bottom: 12px
+
+  &:last-child
+    margin-bottom: 0
+    @media (max-width: $breakpoint992) 
+      margin-bottom: 40px
